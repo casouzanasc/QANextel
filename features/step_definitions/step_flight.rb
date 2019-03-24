@@ -17,6 +17,8 @@ Dado("eu esteja na pagina") do
                                                                                
   Quando("eu escolher os detalhes do voo") do                                  
     @pageflight = Flight.new
+    @pageflight.form_escolher
+    sleep 10
   end   
   
   Entao("eu clico o botao para continuar") do
@@ -26,6 +28,7 @@ Dado("eu esteja na pagina") do
   Quando("eu selecionar partida e retorno do voo") do
     @pagedept = Departure.new
     @pagedept.form_selecionar
+    sleep 5
   end                                                                          
                                                                                   
   Entao("confirmo para continuar o procedimento") do   
@@ -35,6 +38,7 @@ Dado("eu esteja na pagina") do
   Quando("validar todas as informações dos voos") do                          
     @pagesummary = Summary.new
     @retorno = @pagesummary.validar_dados 
+    sleep 10
   end                                                                         
                                                                               
   Entao("preencha os dados") do |table|

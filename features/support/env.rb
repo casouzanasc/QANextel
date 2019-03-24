@@ -36,8 +36,4 @@ Capybara.configure do |config|
 end
 
 
-
-# @login = 'login_default'
-# $massa_default_login = YAML.load_file('./features/support/config/massa_login.yaml')[@login]
-
 Capybara.default_max_wait_time = 30

@@ -3,7 +3,7 @@
 Funcionalidade: Acessar o site Mercury Hour
 
 @submit
-Cenario: Preenchendo formulario dos dados
+Cenario: Realizar reserva de vooss
 
   Dado eu esteja na pagina
   Quando eu preencher os campos
